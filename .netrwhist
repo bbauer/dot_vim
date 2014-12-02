@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/brianbauer/g5/g5-content-management-system/config/environments'
+let g:netrw_dirhist_2='/Users/brianbauer/g5/g5-content-management-system/config'
+let g:netrw_dirhist_3='/Users/brianbauer/g5/g5-content-management-system'
+let g:netrw_dirhist_4='/Users/brianbauer/g5/g5-content-management-system/lib'
+let g:netrw_dirhist_5='/Users/brianbauer/g5/g5-content-management-system/app/controllers'
+let g:netrw_dirhist_6='/Users/brianbauer/g5/g5-content-management-system/app/controllers/api'
+let g:netrw_dirhist_7='/Users/brianbauer/g5/g5-content-management-system/app/controllers/api/v1'
+let g:netrw_dirhist_8='/Users/brianbauer/.vim'

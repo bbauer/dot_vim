@@ -1,0 +1,31 @@
+"WINDOW OPTIONS
+set background=dark " use colors suitable for dark backgrounds
+set t_Co=256
+colorscheme hot_color_scheme   " use a default color scheme
+
+set linespace=2
+set ruler          " shows cursor position in the lower right
+set showcmd        " shows incomplete command to the left of the ruler
+set winminheight=0 " allow windows to be 0 lines tall
+set winminwidth=0  " allow windows to be 0 lines wide
+set laststatus=2   " always show statusline
+
+let stl = "%<"
+let stl .= "%-.60f "
+let stl .= "%{&filetype} "
+let stl .= "%*"
+let stl .= "%-.35{fugitive#statusline()}"
+let stl .= "%="
+let stl .= "%#ErrorMsg#"
+let stl .= "%{&modified > 0 ? '-dirty-' : ''}"
+let stl .= "%{&modified == 1 && &modifiable == 0 ? ' ' : ''}"
+let stl .= "%{&modifiable == 0 ? 'readonly' : ''}"
+let stl .= "%*"
+let stl .= " %c:"
+let stl .= "%l/%L %P"
+
+set statusline=%!stl
+
+" Splits
+set splitbelow                        " open new horiz splits below current
+set splitright                        " open new vert splits to the right

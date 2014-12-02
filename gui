@@ -1,0 +1,17 @@
+"GUI OPTIONS
+colorscheme Hot Color Scheme
+set mouse=a
+set guifont=Source Code Pro:h12
+
+" set default window size
+set columns=370
+set lines=108
+
+" GUI option string.  Values:
+"   c: don't pop up windows; use the console for dialog boxes and such
+"   e: use GUI tab bar instead of text tab bar
+"   g: grey-out non-active menu items
+set guioptions=ce
+
+" Highlight the cursor line
+set cursorline

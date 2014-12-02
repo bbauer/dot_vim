@@ -1,0 +1,46 @@
+"PLUGIN OPTIONS
+runtime macros/matchit.vim
+
+"powerline
+let g:Powerline_symbols = 'fancy'
+
+"bufexplorer
+let g:bufExplorerDetailedHelp=0     " show full help text by default
+let g:bufExplorerShowUnlisted=0     " display unlisted buffers
+
+"gist should be private
+let g:gist_private=1
+let g:gist_clip_command = 'pbcopy'
+
+"NERDTree
+map <leader>d :NERDTreeToggle<cr>
+
+"Tabular
+" sets ,a to align = and => lines
+map <leader>a :Tabularize /=>\?<cr>
+
+"Taglist
+map <leader>t :TlistToggle<cr>
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+
+"Specky
+let g:speckyBannerKey = "<C-S>b"
+let g:speckyQuoteSwitcherKey = "<C-S>'"
+let g:speckyRunRdocKey = "<C-S>r"
+let g:speckySpecSwitcherKey = "<C-S>x"
+let g:speckyRunSpecKey = "<C-S>s"
+let g:speckyRunSpecCmd = "spec -fs"
+let g:speckyRunRdocCmd = "fri -L -f plain"
+let g:speckyWindowType = 2
+
+" Fugitive and Vim
+" =============================================================================
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <silent> <Leader>gd :w<CR>:Gdiff<CR><CR>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gw :Gw<CR>
+
+" command-t
+nmap <unique> <silent> <Leader><Leader> :CommandT<CR>
+nmap <unique> <silent> <Leader><Leader><Leader> :CommandTFlush<CR>:CommandT<CR>
+let g:CommandTMatchWindowAtTop=1

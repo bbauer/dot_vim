@@ -1,0 +1,49 @@
+"KEY BINDINGS
+let mapleader=',' " set leader to ,
+
+" format paragraphs (72 columns)
+" map ^^ {!}par w72qrg<CR>
+
+" one-stroke window maximizing
+map <C-H> <C-W>h<C-W><BAR>
+map <C-L> <C-W>l<C-W><BAR>
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+
+" keep selections when indenting in visual mode
+vnoremap > >gv
+vnoremap < <gv
+
+" quick buffer switching
+map <leader>[ :bprevious<CR>
+map <leader>] :bnext<CR>
+
+" shortcut to strip trailing whitespace
+map <leader>s :%s/\s\+$//g<CR>
+
+" Replicate textmate CMD-[ and CMD-] for indentation
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
+
+nmap <S-up> vk
+vmap <S-up> k
+
+nmap <S-right> vl
+vmap <S-right> l
+
+nmap <S-down> vj
+vmap <S-down> j
+
+nmap <S-left> v
+vmap <S-left> h
+
+" retab the document (tabs to spaces)
+nmap <silent> <leader><S-t> :retab!<CR>
+
+" ,e to find files.
+nmap <leader>e :e **/
+
+noremap <C-Tab> :tabnext<CR>
+noremap <C-S-Tab> :tabprev<CR>
